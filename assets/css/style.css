@@ -1,7 +1,7 @@
 header {
 	background-color: white;
 	height: 50px;
-	width: auto;
+	width: 100%;
 
 }
 
@@ -81,11 +81,18 @@ hr {
    	border-bottom: 1px solid #cccccc;
 }
 body {
-	background-color: lightgrey;
-	margin: auto;
-	background-image: ../Basic-Portfolio/assets/images/greybackground.png;
+	background-image: url("../images/greybackground.png");
+	background-repeat: repeat;
 	color: #777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	position: relative;
+	width: auto;
+	overflow-x: hidden;
+}
+
+#main {
+	width: 960px;
+	align-content: center;
 }
 
 img {
@@ -100,9 +107,10 @@ img {
 	height: auto;
 	background-color: white;
 	padding: 20px;
-	margin: 75px;
+	margin: 20px;
 	border-width: 2px;
 	border-color: #dddddd
+	z-index: 50;
 
 }
 
@@ -118,10 +126,45 @@ h1 {
 	width: 270px;
 	height: auto;
 	background-color: white;
-	padding: 20px;
-	margin: 75px;
+	padding: 20px 20px 20px 20px;
+	margin: 20px;
 	border-width: 2px;
 	border-color: #dddddd;
+	text-align: center;
 }
 
+footer {
+	background-color: #666666;
+	color: lightgrey;
+	height: 50px;
+	text-align: center;
+	border-style: solid;
+	border-top-color: #4aaaa5;
+	border-top-width: 5px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 200;
+
+}
+
+.portfolio {
+	position: relative;
+}
+
+
+.text {
+	position: absolute;
+	z-index: 100;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	width: 200px;
+	display: block;
+	float: left;
+	text-align: center;
+	margin-top: 165px;
+	font-size: 24px;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
 
