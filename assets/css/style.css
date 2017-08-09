@@ -168,3 +168,24 @@ footer {
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+	width: 125px;
+	height: 30px;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	border: 0;
+	box-shadow: none;
+	border-radius: 0px;
+	font-size: 16px;
+}
+
+input[name=Message] {
+	height: 100px;
+}
